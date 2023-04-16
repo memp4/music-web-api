@@ -13,6 +13,19 @@ public class PlaylistController : ControllerBase
     [HttpGet]
     public IActionResult GetAllPlaylists()
     {
-        return Ok(PlaylistConstants.playlist1);
+        return Ok(PlaylistConstants.all);
+    }
+
+    [HttpGet("{plalistId}")]
+    public IActionResult GetPlaylist(string plalistId)
+    {
+        Playlist? playlist = PlaylistConstants.all.Find(playlist => playlist.id == plalistId);
+
+        if (playlist is null)
+        {
+            return NotFound();
+        }
+
+        return Ok(playlist);
     }
 }

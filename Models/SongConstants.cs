@@ -2,10 +2,6 @@ namespace Music.Models;
 
 public class SongConstants
 {
-    public static List<Song> all = new List<Song>()
-    {
-        song1, song2, song3, song4, song5, song6, song7, song8, song9, song10
-    };
     public static Song song1 = new Song()
     {
         id = "song1",
@@ -85,5 +81,9 @@ public class SongConstants
         song = "Travis Scott - Piss On Your Grave (Official Video) ft. Kanye West",
         album = "Rodeo",
         artist = "Travis Scott"
+    };
+    public static List<Song> all = new List<Song>()
+    {
+        song1, song2, song3, song4, song5, song6, song7, song8, song9, song10
     };
 }
