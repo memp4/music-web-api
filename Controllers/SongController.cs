@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Music.Models;
 
 namespace WebApi.Controllers;
 
@@ -23,5 +24,11 @@ public class SongController : ControllerBase
         {
             return NotFound();
         }
+    }
+
+    [HttpGet]
+    public IActionResult GetAllSongs()
+    {
+        return Ok(SongConstants.all);
     }
 }
