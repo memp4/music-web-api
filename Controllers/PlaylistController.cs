@@ -28,4 +28,30 @@ public class PlaylistController : ControllerBase
 
         return Ok(playlist);
     }
+
+    [HttpPost]
+    public IActionResult CreateNewPlaylist(string playlistName, string[] songs)
+    {
+        string newId = Guid.NewGuid().ToString("N");
+        List<Song> addSongs = new List<Song>();
+        foreach (string song in songs)
+        {
+            Song? toAdd = SongConstants.all.Find(s => s.name == song);
+            if (toAdd is not null)
+            {
+                addSongs.Add(toAdd);
+            }
+        }
+
+        Playlist newPlaylist = new Playlist()
+        {
+            id = newId,
+            name = playlistName,
+            songs = addSongs
+        };
+
+        PlaylistConstants.all.Add(newPlaylist);
+
+        return Ok(PlaylistConstants.all);
+    }
 }
