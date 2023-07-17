@@ -27,8 +27,19 @@ public class SongController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAllSongs()
+    public ActionResult<IEnumerable<Song>> GetAllSongs(MusicDbContext db)
     {
-        return Ok(SongConstants.all);
+        return db.Song.ToList();
     }
+
+    // [HttpGet("{name}")]
+    // public ActionResult<IEnumerable<Song>> GetSong(string name, MusicDbContext db)
+    // {
+    //     Song? result = db.Song.First(song => song.name == name);
+    //     if (result is null)
+    //     {
+    //         return NotFound();
+    //     }
+    //     return Ok(result);
+    // }
 }
