@@ -1,0 +1,72 @@
+[
+    {
+        "id": "song1",
+        "name": "Rap Saved Me",
+        "song": "Rap Saved Me",
+        "album": "Without Warning",
+        "artist": "Metro Boomin"
+    },
+    {
+        "id": "song2",
+        "name": "Trilla",
+        "song": "A$AP Rocky - Trilla (Ft. A$AP Twelvy & A$AP Nast) [LiveLoveAsap]",
+        "album": "Live.Love.A$AP",
+        "artist": "A$AP Rocky"
+    },
+    {
+        "id": "song3",
+        "name": "bee.",
+        "song": "bee",
+        "album": "bee.",
+        "artist": "Groove music"
+    },
+    {
+        "id": "song4",
+        "name": "Puffin on Zooties",
+        "song": "Future - PUFFIN ON ZOOTIEZ (Official Audio)",
+        "album": "I Never Liked You",
+        "artist": "Future"
+    },
+    {
+        "id": "song5",
+        "name": "Time in a bottle",
+        "song": "Jim Croce - Time in a bottle - 1973",
+        "album": "You Don't Mess Around with Jim",
+        "artist": "Jim Croce"
+    },
+    {
+        "id": "song6",
+        "name": "Mathematics",
+        "song": "Mos Def - Mathematics",
+        "album": "Balck on Both Side",
+        "artist": "Mos Def"
+    },
+    {
+        "id": "song7",
+        "name": "R.I.P.",
+        "song": "Playboi Carti - R.I.P. but the intro transcends you",
+        "album": "Die Lit",
+        "artist": "Playboi Carti"
+    },
+    {
+        "id": "song8",
+        "name": "All Along the Watchtowers",
+        "song": "The Jimi Hendrix Experience - All Along The Watchtower (Official Audio)",
+        "album": "Electric Ladyland",
+        "artist": "Jimi Hendrix"
+    },
+    {
+        "id": "song9",
+        "name": "Stay Fly",
+        "song": "Three 6 Mafia - Stay Fly (Official Video)",
+        "album": "Most Known Unkown",
+        "artist": "Three 6 Mafia"
+    },
+    {
+        "id": "song10",
+        "name": "Piss On Your Grave",
+        "song": "Travis Scott - Piss On Your Grave (Official Video) ft. Kanye West",
+        "album": "Rodeo",
+        "artist": "Travis Scott"
+    }
+]
