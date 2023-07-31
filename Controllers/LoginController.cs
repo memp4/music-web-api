@@ -51,7 +51,7 @@ public class LoginController : ControllerBase
         if (userLogin.Username is null ||
             userLogin.GivenName is null ||
             userLogin.Password is null ||
-            userLogin.EmailAddress is null ||
+            userLogin.EmailAddres is null ||
             userLogin.Surename is null ||
             userLogin.Role is null)
         {
@@ -61,7 +61,7 @@ public class LoginController : ControllerBase
         var claims = new[]
         {
             new Claim(ClaimTypes.NameIdentifier, userLogin.Username),
-            new Claim(ClaimTypes.Email, userLogin.EmailAddress),
+            new Claim(ClaimTypes.Email, userLogin.EmailAddres),
             new Claim(ClaimTypes.GivenName, userLogin.GivenName),
             new Claim(ClaimTypes.Surname, userLogin.Surename),
             new Claim(ClaimTypes.Role, userLogin.Role)

@@ -1,0 +1,63 @@
+[
+    {
+        "id": "playlist1",
+        "name": "First playlist",
+        "songs": [
+            {
+                "id": "song1",
+                "name": "Rap Saved Me",
+                "song": "Rap Saved Me",
+                "album": "Without Warning",
+                "artist": "Metro Boomin"
+            },
+            {
+                "id": "song2",
+                "name": "Trilla",
+                "song": "A$AP Rocky - Trilla (Ft. A$AP Twelvy & A$AP Nast) [LiveLoveAsap]",
+                "album": "Live.Love.A$AP",
+                "artist": "A$AP Rocky"
+            },
+            {
+                "id": "song3",
+                "name": "bee.",
+                "song": "bee",
+                "album": "bee.",
+                "artist": "Groove music"
+            },
+            {
+                "id": "song4",
+                "name": "Puffin on Zooties",
+                "song": "Future - PUFFIN ON ZOOTIEZ (Official Audio)",
+                "album": "I Never Liked You",
+                "artist": "Future"
+            }
+        ]
+    },
+    {
+        "id": "playlist2",
+        "name": "Second playlist",
+        "songs": [
+            {
+                "id": "song1",
+                "name": "Rap Saved Me",
+                "song": "Rap Saved Me",
+                "album": "Without Warning",
+                "artist": "Metro Boomin"
+            },
+            {
+                "id": "song5",
+                "name": "Time in a bottle",
+                "song": "Jim Croce - Time in a bottle - 1973",
+                "album": "You Don't Mess Around with Jim",
+                "artist": "Jim Croce"
+            },
+            {
+                "id": "song6",
+                "name": "Mathematics",
+                "song": "Mos Def - Mathematics",
+                "album": "Balck on Both Side",
+                "artist": "Mos Def"
+            }
+        ]
+    }
+]

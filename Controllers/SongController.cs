@@ -13,15 +13,15 @@ public class SongController : ControllerBase
     [HttpGet]
     public ActionResult<IEnumerable<Song>> GetAllSongs(MusicDbContext db)
     {
-        return db.Song.ToList();
+        return db.Songs.ToList();
     }
 
     [HttpPost]
     public ActionResult<IEnumerable<Song>> AddSongs(MusicDbContext db, Song[] songs)
     {
-        db.Song.AddRange(songs);
+        db.Songs.AddRange(songs);
         db.SaveChanges();
-        return db.Song.ToList();
+        return db.Songs.ToList();
     }
 
     [HttpPatch]
@@ -29,7 +29,7 @@ public class SongController : ControllerBase
     {
         foreach (Song song in songs)
         {
-            Song? fromDb = db.Song.First(v => v.id == song.id);
+            Song? fromDb = db.Songs.First(v => v.id == song.id);
             if (fromDb is not null)
             {
                 fromDb.name = song.name;
@@ -39,7 +39,7 @@ public class SongController : ControllerBase
             }
         }
         db.SaveChanges();
-        return db.Song.ToList();
+        return db.Songs.ToList();
     }
 
     [HttpDelete]
@@ -47,13 +47,13 @@ public class SongController : ControllerBase
     {
         foreach (string id in ids)
         {
-            Song? fromDb = db.Song.First(v => v.id == id);
+            Song? fromDb = db.Songs.First(v => v.id == id);
             if (fromDb is not null)
             {
-                db.Song.Remove(fromDb);
+                db.Songs.Remove(fromDb);
             }
         }
         db.SaveChanges();
-        return db.Song.ToList();
+        return db.Songs.ToList();
     }
 }

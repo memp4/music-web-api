@@ -1,0 +1,18 @@
+[
+    {
+        "Username": "admin",
+        "EmailAddres": "admin@email.com",
+        "Password": "12345",
+        "GivenName": "Name",
+        "Surename": "Surename",
+        "Role": "user"
+    },
+    {
+        "Username": "dada",
+        "EmailAddres": "dada@email.com",
+        "Password": "5555",
+        "GivenName": "DODO",
+        "Surename": "SureDO",
+        "Role": "user"
+    }
+]
